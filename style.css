@@ -160,7 +160,6 @@ body{
 	padding:0;
 	padding-bottom:50px;
 	margin:0;
-	top:0px;
 	font-size:24px;
 	color:#FFF;
 	width:225px;
@@ -274,9 +273,25 @@ body{
 	color:#19a2DE;
 }
 
+.nav-previous:hover{
+	background-color:#19a2de;
+}
+
+.nav-next:hover{
+	background-color:#19a2de;
+}
+
+.nav-next a, .nav-previous a{
+	width:925px;
+}
+
 .large{
 	font-size:32px;
 	color:#FFF;
+}
+
+.xlarge{
+	font-size:100px;
 }
 
 .links{
@@ -293,6 +308,7 @@ body{
 	top:0px;
 	right:0px;
 }
+
 
 .toast{
 	position:fixed;
@@ -381,6 +397,7 @@ body{
 	position:relative;
 	color:#FFF;
 	left:245px;
+	padding-top:0px;
 	top:0px;
 	min-height:535px;
 	width:925px;
@@ -394,6 +411,50 @@ body{
 .main_cont .content a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .main_cont .content img.right { padding: 4px; margin: 0 0 2px 7px; display: inline; }
 .main_cont .content img.left { padding: 4px; margin: 0 7px 2px 0; display: inline; }
+
+.main_cont .content div.alignright {float:right; margin:0 0 1em 1em}
+.main_cont .content div.alignleft {float:left; margin:0 1em 1em 0}
+.main_cont .content div.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.main_cont .content a div.alignright {float:right; margin:0 0 1em 1em}
+.main_cont .content a div.alignleft {float:left; margin:0 1em 1em 0}
+.main_cont .content a div.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.main_cont .content div.right { padding: 4px; margin: 0 0 2px 7px; display: inline; }
+.main_cont .content div.left { padding: 4px; margin: 0 7px 2px 0; display: inline; }
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #999;
+	text-align: center;
+	background-color: #999;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	color:white;
+	text-align:center !important;
+	font-size: 15px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
 
 .main_cont .content #logs .s_tile{
 	background-image:url(images/logs.png);
@@ -432,6 +493,7 @@ body{
 }
 
 .footer{
+	visibility:hidden;
 	min-width:1280px;
 	height:53px;
 	margin-top:-32px;

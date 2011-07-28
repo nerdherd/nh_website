@@ -2,14 +2,18 @@
 $(document).ready(function(){
 	if($(".content").height()<$(window).height()-199){
 		$(".full").css("height",$(window).height()-22);
+		$(".footer").css("visibility","visible");
 	}else{		
-		$(".full").css("height",$(".content").height()+149)
+		$(".full").css("height",$(".content").height()+149);
+		$(".footer").css("visibility","visible");
 	}
 	$(document).mousemove(function(){
 		if($(".content").height()<$(window).height()-199){
 			$(".full").css("height",$(window).height()-22);
+			$(".footer").css("visibility","visible");
 		}else{		
-			$(".full").css("height",$(".content").height()+149)
+			$(".full").css("height",$(".content").height()+149);
+			$(".footer").css("visibility","visible");
 		}
 	});
 	$("#legal").mouseenter(function(){

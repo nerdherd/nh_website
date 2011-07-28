@@ -9,7 +9,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Be a Nerd! Join the Herd!</title>
 </head>
-
 <body>
 <div class="full">
 <div class="main_cont">
@@ -19,20 +18,15 @@
 <div id="title">The Nerd Herd</div>
 </div>
 
-<div id="body">
 <div id="sidebar">
     <ul>
  <?php 
-  $pages = get_pages('&parent=0');
+  $excl = get_page_by_title('exclude');
+  $pages = get_pages('parent=0&exclude='.$excl->ID.'&exclude_tree='.$excl->ID.'&sort_order=ASC&sort_column=menu_order');
   $heir = get_ancestors( $post->ID, 'page');
-  if (is_home()){
-	  echo '<li class="currentli"><a href="'.home_url().'">Home</a></li>';
-  }else{
-	  echo '<li><a href="'.home_url().'">Home</a></li>';
-  }
   foreach ($pages as $pagg) {
 	$paggid = $pagg->ID;
-	$check = get_pages('child_of='.$pagg->ID.'&parent='.$pagg->ID.'');
+	$check = get_pages('child_of='.$pagg->ID.'&parent='.$pagg->ID.'&exclude='.$excl->ID.'&exclude_tree='.$excl->ID.'&sort_order=ASC&sort_column=menu_order');
 	if (in_array($paggid, $heir)){
 		$option = '<li class="currentli">';
 		$option .= '<div class="currentlidiv">'.$pagg->post_title.'</div>'; 
@@ -44,11 +38,12 @@
 		}else{
   		$option = '<li>'.$pagg->post_title;
 		}
-	}
-	$option .= '<ul class="sub">'; 
+	} 
     $child   = get_pages('child_of='.$pagg->ID.'&parent='.$pagg->ID.'');
+	if($child){
+	 $option .= '<ul class="sub">';
 	 foreach ($child as $chip) {
-	 	$chipid = $chip->ID;               
+	 	 $chipid = $chip->ID;               
 		 $chirp  = '<li>';
 		if (in_array($chipid, $heir)||$chipid==$post->ID){
 		 $chirp  = '<a href="'.get_page_link($chip->ID).'" class="currentsubhref">';
@@ -60,7 +55,8 @@
 		 $chirp .= '</li>';
 		 $option.= $chirp;
 	 }
-	$option .= '</ul>';
+	 $option .= '</ul>';
+	}else{}
 	$option .= '</li>';
 	echo $option;
   }

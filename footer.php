@@ -1,6 +1,5 @@
 </div>
 </div>
-<div id="hotspot"></div>
 <div class="footer">
 <div id="footer"><div id="footertext"><a href="http://www.californiaacademy.org"><span class="links">California Academy of Mathematics and Science</span></a></div>
 <div class="p_footer">
@@ -9,7 +8,7 @@
 FIRST, FRC,GRACIOUS PROFESSIONALISM, and LOGOMOTION are registered trademarks of United States Foundation for Inspiration and Recognition of Science and Technology or <a href="http://www.USFIRST.org">USFIRST</a>, a 501 (c) (3) not-for-profit public charity. VEX, VEX GATEWAY, VEX ROUND UP, and VEX ROBOTICS are trademarks or registered trademarks of Innovation First International, Inc. VEX Robotics is a subsiadary of Innovation First International Inc. All other copyrights and trademarks are property of their respective owners.<br/>
 <div id="valid">
 <p>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<a href="http://jigsaw.w3.org/css-validator/validator?uri=technoturtle.comze.com&profile=css3&usermedium=all&warning=1&vextwarning=">
     <img style="border:0;width:88px;height:31px"
         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
         alt="Valid CSS!" />
