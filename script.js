@@ -34,6 +34,7 @@ $(document).ready(function(){
 	$(".toast").slideDown(500);
 	$(".toast").css('zIndex', 500);
 	$(".x").mousedown(function(){
+		$(".x").css("display","none");
 		$(".toast").slideUp(500);
 	});
 });
