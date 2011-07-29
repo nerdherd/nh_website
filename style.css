@@ -281,7 +281,7 @@ body{
 	background-color:#19a2de;
 }
 
-.nav-next a, .nav-previous a{
+.nav-next, .nav-previous{
 	width:925px;
 }
 
