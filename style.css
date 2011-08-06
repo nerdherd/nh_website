@@ -36,11 +36,11 @@ html, head{
 
 .full{
 	margin:0;
-	background-image:url(images/optimizedbg.png);
 	background-repeat:no-repeat;
 	background-position:bottom right;
 	background-attachment:scroll;
 	min-height:720px;
+	background-image:url(images/optimizedbg.png);
 }
 
 @font-face{
@@ -81,6 +81,11 @@ body{
 	margin:0;
 	padding:0;
 	min-width:1280px;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
 }
 
 .currentli{
@@ -283,11 +288,37 @@ body{
 
 .nav-next, .nav-previous{
 	width:925px;
+	display:block;
 }
 
 .large{
 	font-size:32px;
 	color:#FFF;
+}
+
+h2{
+	font-family:sego, "Century Gothic", Helvetica, Arial, sans-serif;
+	font-size:32px;
+	color:#FFF;
+	font-weight:normal;
+}
+
+hr{
+	color:#19a2de;
+}
+
+p{
+	margin:0px;
+}
+
+.title{
+	font-family:sego, "Century Gothic", Helvetica, Arial, sans-serif;
+	font-size:32px;
+	color:#FFF;
+}
+
+.underline{
+	text-decoration:underline;
 }
 
 .xlarge{
@@ -543,11 +574,6 @@ div.aligncenter {
 	font-size:16px;
 	text-align:left;
 	cursor:default;
-}
-
-#legal a{
-	text-decoration:underline;
-	color:#FFF;
 }
 
 #valid{
