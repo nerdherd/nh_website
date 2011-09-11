@@ -1,11 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jqueryui.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<link rel="icon" type="image/png" href="http://technoturtle.comze.com/favicon.png" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>"/>
+<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/script.js"></script>
+<!--The following is a javascript script that allows older IE browsers to "recognize" HTML5 elements, instead of disregarding them alltogether. -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="icon" type="image/png" href="<?php bloginfo( 'template_url' ); ?>/favicon.png" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Be a Nerd! Join the Herd!</title>
 </head>
@@ -14,7 +17,7 @@
 <div class="main_cont">
 <div id="header">
 <div id="pre_title">CAMS Robotics Team 687</div>
-<div id="logo_row"><a href="../index.html"></a></div>
+<div id="logo_row"><a href="<?=get_site_url();?>"></a></div>
 <div id="title">The Nerd Herd</div>
 </div>
 

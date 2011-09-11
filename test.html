@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style title="text/cass">
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name: MetroUI_nh                       
+Theme URI: http://wordpress.org/             
+Description: Created by Misbah Khan and 
+José Marcel Santos exclusively for the CAMS
+Robotics 687 team. 
+Author: Misbah Khan && José Marcel Santos    
+Version:0.69
+License: 
+License URI: see above ^
+Tags:
+*/
+* {
+margin: 0;
+}
+
+html, head, body {
+	height:100%;
+	min-height:100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	min-height:100%;
+}
+
+.footer, .push {
+	height: 4em;
+	clear: both;
+}
+
+
+@font-face{
+	font-family: sego;
+	src: url(fonts/segoeui.ttf),
+         url(fonts/segoeui.eot) format("opentype");
+}
+
+a:link{
+	text-decoration:none;
+	color:#FFF;
+}
+
+a:visited{
+	text-decoration:none;
+	color:#FFF;
+}
+
+a:active{
+	text-decoration:none;
+	color:#FFF;
+}
+
+a:hover{
+	text-decoration:none;
+	color:#FFF;
+}
+
+body{
+	font-family:sego;
+	background:#000;
+	min-height:100%;
+}
+
+::selection{
+	color:#19A2DE; /* Safari */
+}
+
+/* 
+::-moz-selection {
+	color:#19A2DE; 
+}
+Firefox */
+
+.main_cont{
+    position:relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px;
+	width:1280px;
+}
+
+.main_cont #pre_title{
+	position:relative;
+	top:25px;
+	left:10px;
+	width:250px;
+	height:25px;
+	font-size:18px;
+	color:#FFF;
+}
+
+.main_cont #logo_row{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:350px;
+	height:120px;
+	padding-right:0px;
+	background-image:url(images/logo_blue.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+.main_cont #logo_row a{
+	display:block;
+	width:350px;
+	height:120px;
+}
+
+.main_cont #title{
+	position:absolute;
+	height:75px;
+	top:35px;
+	left:10px;
+	font-size:72px;
+	color:#FFF;
+}
+
+.main_cont #sidebar, .main_cont .pagenav{
+	position:absolute;
+	left:10px;
+	padding:0;
+	padding-bottom:50px;
+	margin:0;
+	top:125px;
+	font-size:24px;
+	color:#FFF;
+	width:225px;
+}
+
+.main_cont #sidebar a{
+	display:block;
+	width:225px;	
+}
+
+.main_cont #sidebar ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.main_cont #sidebar li:hover{
+	cursor:pointer;
+	
+}
+
+.main_cont #sidebar li ul.sub{
+	display:none;
+	background-color:#000;
+	color:#FFF;
+	font-size:20px;
+	padding-left:10px;
+}
+
+.main_cont #sidebar li ul.sub li:hover{
+	background-color:#000;
+	color:#19A2DE;
+}
+
+.main_cont #sidebar li ul.sub li a:hover{
+	background-color:#000;
+	color:#19A2DE;
+}
+
+.main_cont #sidebar #social{
+	position:relative;
+	margin-top:10px;
+}
+
+.main_cont #sidebar #social #facebook{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:42px;
+	height:42px;
+	background-image:url(images/facebook.png);
+}
+
+.main_cont #sidebar #social #twitter{
+	position:absolute;
+	left:52px;
+	top:0px;
+	width:42px;
+	height:42px;
+	background-image:url(images/twitter.png);
+}
+
+.main_cont #sidebar #social #youtube{
+	position:absolute;
+	left:104px;
+	top:0px;
+	width:42px;
+	height:42px;
+	background-image:url(images/twitter.png);
+}
+
+/*
+.main_cont #sidebar li:hover ul.sub{
+	display:block;
+	background-color:#000;
+}
+*/
+
+.black{
+	background-color:#000;
+}
+
+.text{
+	color:#FFF;
+	overflow:hidden;
+	position:absolute;
+	padding-top:195px;
+	padding-left:5px;
+	font-size:36px;
+}
+
+.blue{
+	color:#19a2DE;
+}
+
+.large{
+	font-size:32px;
+	color:#FFF;
+}
+
+.links{
+	color:#FFF;
+}
+
+.links:hover{
+	text-decoration:underline;
+	color:#19A2DE;
+}
+
+.video{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+.toast{
+	position:fixed;
+	display:none;
+	font-size:15px;
+	height:20px;
+	width:100%;
+	min-width:1300px;
+	background-color:#19a2de;
+	margin: 0 0 0 0;
+	top:0px;
+	left:0px;
+	color:#FFF;
+	overflow:hidden;	
+}
+
+.toast #ttext{
+	position:relative;
+	width:1280px;
+	height:20px;
+	left:auto;
+	right:auto;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+.x{
+	position:fixed;
+	right:10px;
+	top:0px;
+	width:5px;
+	cursor:pointer;
+	z-index:2;
+}
+
+.s_tile{
+	position:absolute;
+	width:250px;
+	height:250px;
+	top:0px;
+	left:0px;
+	cursor:pointer;
+	background-color:#19a2de;
+	overflow:hidden;
+}
+
+.s_tile:hover{
+}
+
+.l_tile{
+	position:absolute;
+	width:510px;
+	height:250px;
+	top:0px;
+	left:0px;
+	cursor:pointer;
+	background-color:#19A2DE;
+	overflow:hidden;
+}
+
+.t_l_image{
+	position:relative;
+	clear:left;
+	left:0px;
+	top:0px;	
+}
+
+.main_cont .content{
+	position:absolute;
+	color:#FFF;
+	left:245px;
+	top:125px;
+	width:925px;
+	height:535px;
+	max-height:535px;
+	clear: both;
+}
+
+.main_cont #home .content #logs .s_tile{
+	background-image:url(images/logs.png);
+}
+
+.main_cont #home .content #thenerds .s_tile{
+	left:260px;
+	background-image:url(images/nerdfais.png);
+}
+
+.main_cont #home .content #outreach .s_tile{
+	left:520px;
+	background-image:url(images/outreach.png);
+}
+
+.main_cont #home .content #theherd .l_tile{
+	top:260px;
+	background-image:url(images/nhtilescroll.png);
+}
+
+.main_cont #home .content #sponsors .s_tile{
+	top:260px;
+	left:520px;
+	background-image:url(images/Boeing.png);
+}
+
+.main_cont #vex .content{
+	color:white;
+}
+
+
+
+/*
+.main_cont #vex .content .t_l_image{
+	width:318px;
+	height:246px;
+	font-size:24px;
+	background-image:url(images/r_vex.png);
+}
+
+
+.main_cont #mentors .content .t_l_image{
+	width:387px;
+	height:259px;
+	font-size:24px;
+	background-image:url(images/mentor.png);
+}
+*/
+
+
+/*
+#footer{
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	right:0px;
+	font-size:24px;
+	width:100%;
+}
+
+#footer #footertext{
+	position: relative;
+	width:1280px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.p_footer{
+	position:absolute;
+	height:20px;
+	left:0px;
+	right:0px;
+	width:100%;
+	color:#FFF;
+	font-size:10px;
+	background-color:#19a2de;
+	overflow:hidden;
+	text-align:right;
+}
+
+
+
+#legal{
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	right:0px;
+	max-width:1280px;
+	height:100%;
+	font-size:16px;
+	text-align:left;
+	cursor:default;
+}
+*/
+
+
+
+</style>
+</head>
+
+<body>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="wrapper">
+m Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+ 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            <div class="push"></div>
+        </div>
+        <div class="footer">
+            <p>Copyright (c) 2008</p>
+        </div>
+    </body>
+</html>
+</body>
+</html>

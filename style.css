@@ -45,13 +45,27 @@ html, head{
 
 @font-face{
 	font-family: sego;
-	src: url(fonts/segoeui.ttf);
+	src: url(fonts/segoeui.ttf),
+		 url(fonts/segoeui.eot);
 }
 
 @font-face{
 	font-family: sego;
 	font-weight: bold;
-	src: url(fonts/segoeuib.ttf);	
+	src: url(fonts/segoeuib.ttf),
+		 url(fonts/segoeuib.eot);	
+}
+
+@font-face{
+	font-family: sego;
+	font-style: italic;
+	src: url(fonts/segoeuii.ttf),
+		 url(fonts/segoeuii.eot);	
+}
+
+i, em{
+	font-family:sego;
+	font-style: italic;
 }
 
 a:link{
@@ -75,7 +89,7 @@ a:hover{
 }
 
 body{
-	font-family:sego, "Century Gothic", Helvetica, Arial, sans-serif;
+	font-family: sego, "Century Gothic", Helvetica, Arial, sans-serif;
 	background-color:#000;
 	height:100%;
 	margin:0;
