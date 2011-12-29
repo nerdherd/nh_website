@@ -24,8 +24,8 @@ $(document).ready(function(){
 			});
 		});
 	});
-	$('.l_tile').animate({backgroundPosition: 100+'%'},8000,'linear');
-	$('.l_tile').animate({backgroundPosition: 50+'%'},4000,'linear');
+	$('.l_tile').animate({backgroundPosition: 80+'%'},8000,'linear');
+	$('.l_tile').animate({backgroundPosition: 30+'%'},4000,'linear');
 	$("li").click(function(){
 		$("li").children("ul.sub").css({display:"none"});
 		$(this).children("ul.sub").css({display:"block"});
